@@ -1,0 +1,17 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-md')">
+  <md-toolbar class="md-theme-indigo">
+    <h1 class="md-toolbar-tools">Hrms</h1>
+  </md-toolbar>
+  <md-content>
+    <ul class="navigation-menu">
+      <li class="md-padding" ng-repeat="item in navigationItems">
+        <menu-link class="ng-isolate-scope">
+          <a class="md-button md-default-theme" ui-sref-active="active" ui-sref="{{ item.name }}">
+            <span class="ng-binding ng-scope">{{ item.name }}</span>
+            <div class="md-ripple-container"></div>
+          </a>
+        </menu-link>
+      </li>
+    </ul>
+  </md-content>
+</md-sidenav>
