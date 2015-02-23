@@ -13,14 +13,11 @@ html {
   margin: 0;
 
   li {
+    display: block;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
 
-    &:first-child {
-      border-top: none;
-    }
-  }
+    .md-button {
 
-  a.md-button {
     border-radius: 0;
     color: inherit;
     cursor: pointer;
@@ -34,7 +31,12 @@ html {
     white-space: normal;
     width: 100%;
     display: block;
-    padding: 0 16px 0 32px;
+    padding: 0 16px;
+    }
+
+    &:first-child {
+      border-top: none;
+    }
   }
 }
 // injector
