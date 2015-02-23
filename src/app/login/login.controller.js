@@ -3,7 +3,7 @@
 angular.module('hrmsFrontend')
   .controller('LoginCtrl', function ($scope, $resource) {
     $scope.user = {
-      email: '',
+      identifier: '',
       password: ''
     };
     var csrf = $resource('/api/csrfToken').get(function () {
